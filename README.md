@@ -61,8 +61,3 @@ efficient, resource, sustainable, approach, significant。
     ├── SKILL.md               # 技能入口与出题、批改规则
     ├── agents/openai.yaml     # 显示名称与默认提示
     └── references/exam-formats.md
-## 维护
-
-反馈题目问题时，请附考试类型、词表、完整试题和有疑问的题号，便于复现。更新规则时，同时检查题型参考、答案展示方式和覆盖统计是否一致。
-
-如何把这份仓库上传到 GitHub，见 [上传指南](docs/github-upload.md)。
