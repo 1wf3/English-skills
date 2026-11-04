@@ -1,0 +1,19 @@
+# Local research material and release copies
+/work/
+/outputs/
+
+# Local environment and credentials
+.env
+.env.*
+!.env.example
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+
+# Editor and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+Desktop.ini

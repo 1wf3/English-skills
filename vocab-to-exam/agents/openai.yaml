@@ -1,0 +1,4 @@
+interface:
+  display_name: "单词变考题"
+  short_description: "把当天背过的英语单词转化为四级、六级和考研阅读翻译练习"
+  default_prompt: "请使用 $vocab-to-exam，根据我今天背过的单词，按指定考试和题型生成练习，等我作答后再给解析。"
