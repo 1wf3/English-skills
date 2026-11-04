@@ -32,7 +32,6 @@ efficient, resource, sustainable, approach, significant。
 - 批改包含答案证据与错误原因；翻译允许合理的不同译法。
 - 分别使用四六级与考研风格规则，检查语篇推进、自然搭配、答案证据和干扰项，减少生硬塞词与题目双解。
 
-更多可复制提示见 [使用示例](docs/examples.md)。
 
 ## 新增：真题风格与语言质量规则
 
@@ -43,7 +42,7 @@ efficient, resource, sustainable, approach, significant。
 - **逐题核查证据**：检查正确选项的定位与改写是否成立，以及干扰项错在哪里，减少双解和依赖常识猜答案的题目。
 - **按考试区分风格**：四六级与考研分别处理阅读、新题型、选词填空及翻译，不用替换几个难词来冒充另一类考试。
 
-资料记录以2016—2025年为主，另含2026年补充样本；实际覆盖范围、缺失套卷及转录质量限制见 [资料范围与证据](vocab-to-exam/references/corpus-evidence.md)。这些是技能参考规则，未对底层模型做微调，也不保证与真题难度等值。
+
 
 ## 安装到 Codex
 
@@ -56,7 +55,6 @@ efficient, resource, sustainable, approach, significant。
 3. 确认 `SKILL.md` 直接位于该文件夹内，避免多嵌套一层。
 4. 在对话中输入 `$vocab-to-exam` 和词表；若技能未出现，重启 Codex 后再试。
 
-这些路径和发现方式依据 [OpenAI 官方技能文档](https://learn.chatgpt.com/docs/build-skills)。其他支持 Agent Skills 的工具需要按其说明安装，本仓库未逐一验证兼容性。
 
 ## 仓库结构
 
@@ -79,20 +77,5 @@ efficient, resource, sustainable, approach, significant。
         ├── kaoyan-style.md          # 考研英语一、二风格
         ├── corpus-evidence.md       # 样本范围、证据及缺口
         └── corpus-sources.json      # 来源URL、标年与质量标记
-```
-
-本地开发用的 `work/` 和发布用的 `outputs/` 不属于仓库发布内容。
-
-## 题型依据与能力边界
-
-本技能生成原创模拟练习，不是真题，也不代表官方等值难度认证。输出质量依赖所用模型，仍需检查题目歧义、语言自然度和答案证据。
-
-发布内容包含规则、资料归纳与出处清单，不批量打包真题原文或第三方解析；公开整理版资料也不等于官方认证卷。
-
-题型资料保留了版本与来源边界：四六级依据已核查的2016年修订版；考研部分参考历史资料及2025版公开节选转载，未完成2027版官方原书全文核验。未内置可用于逐词核验的完整考纲词表，因此不能保证所有词汇均在考纲内。详见 [题型参考](vocab-to-exam/references/exam-formats.md) 与 [考纲核查记录](docs/syllabus-audit.md)。
-
-## 维护
-
-反馈题目问题时，请附考试类型、词表、完整试题和有疑问的题号，便于复现。更新规则时，同时检查题型参考、答案展示方式和覆盖统计是否一致。
 
 如何把这份仓库上传到 GitHub，见 [上传指南](docs/github-upload.md)。
